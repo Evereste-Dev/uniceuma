@@ -1,0 +1,17 @@
+#nome do container no docker
+name: uniceuma
+services:
+  postgres:
+    image: postgres:16
+    container_name: uniceuma-postgres
+    environment:
+      POSTGRES_DB: db_uniceuma
+      POSTGRES_USER: uniceuma
+      POSTGRES_PASSWORD: uniceuma
+    ports:
+      - "5434:5432"
+    volumes:
+      - uniceuma-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  uniceuma-postgres-data:
