@@ -28,7 +28,7 @@ backend/
 **1. Baixe o projeto**
 
 ```bash
-git clone https://github.com/Eneylton/uniceuma.git
+git clone https://github.com/Evereste-Dev/uniceuma.git
 cd uniceuma/backend
 ```
 
